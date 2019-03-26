@@ -1,0 +1,32 @@
+{
+  "name": "rikudou/czech-income-tax",
+  "description": "Simple library to calculate income tax for Czech Republic",
+  "minimum-stability": "stable",
+  "license": "WTFPL",
+  "authors": [
+    {
+      "name": "Dominik Chrástecký",
+      "email": "dominik@chrastecky.cz"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Rikudou\\CzechIncomeTax\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Rikudou\\Tests\\CzechIncomeTax\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^2.14",
+    "phpstan/phpstan": "^0.11.4",
+    "phpunit/phpunit": "^7",
+    "php-coveralls/php-coveralls": "^2.1"
+  },
+  "scripts": {
+    "fixer": "./vendor/bin/php-cs-fixer fix src --verbose",
+    "phpstan": "./vendor/bin/phpstan analyse --level=max src"
+  }
+}
